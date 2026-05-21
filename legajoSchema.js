@@ -1,4 +1,4 @@
-const mongoose = require('mongoose'); // mongoose es una biblioteca de modelado de base de datos
+const mongoose = require('mongoose');
 const LegajoSchema = new mongoose.Schema({
     legajo_id: { type: String, required: true, unique: true },
     nombre: { type: String, required: true },

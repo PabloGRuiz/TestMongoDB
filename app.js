@@ -6,12 +6,10 @@ async function iniciarSistema() {
 
     try {
 
-        //Intetamos conectar con la base de datos
         await mongoose.connect(MONGO_URI);
         console.log('=> ¡Conectado con éxito a MongoDB Local!');
         await Legajo.deleteMany({});
 
-        //Creamos un par legajos
         const empleadoSistemas = new Legajo({
             legajo_id: 'LEG-2026-001',
             nombre: 'Esteban Quito',
@@ -37,7 +35,6 @@ async function iniciarSistema() {
             }
         });
 
-        // Guardamos los legajos en la base de datos
         await empleadoSistemas.save()
         console.log("Legajo guardado!")
 
@@ -46,7 +43,6 @@ async function iniciarSistema() {
     } catch (error) {
         console.error('Hubo un error en el proceso:', error);
     } finally {
-        // Nos desconectamos de la base de datos una vez finalizado el proceso
         await mongoose.disconnect();
         console.log('=> Desconectado de MongoDB.');
     }

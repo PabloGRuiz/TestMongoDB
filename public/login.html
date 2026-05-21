@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Dashboard Legajos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center font-sans">
+
+    <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200 w-full max-w-md">
+        <div class="mb-6 border-b pb-4 text-center">
+            <h2 class="text-3xl font-bold text-gray-800">Iniciar Sesión</h2>
+            <p class="text-gray-500 text-sm mt-1">Acceso al sistema de legajos</p>
+        </div>
+
+        <form id="formLogin" class="space-y-4">
+            <div>
+                <label class="block text-sm font-semibold text-gray-700 mb-1">Email</label>
+                <input type="email" id="user_mail" placeholder="usuario@empresa.com" required
+                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
+            </div>
+            <div>
+                <label class="block text-sm font-semibold text-gray-700 mb-1">Contraseña</label>
+                <input type="password" id="user_password" placeholder="••••••••" required
+                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
+            </div>
+
+            <button type="submit" id="btnSubmit"
+                class="w-full mt-6 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg shadow-md transition-all active:scale-95">
+                Ingresar
+            </button>
+        </form>
+
+        <div id="mensaje" class="hidden mt-4 p-3 rounded-lg text-sm text-center font-medium"></div>
+
+        <div class="mt-6 text-center text-sm text-gray-600">
+            ¿No tienes cuenta? <a href="register.html" class="text-blue-600 font-bold hover:underline">Regístrate aquí</a>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('formLogin').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const btnSubmit = document.getElementById('btnSubmit');
+            const mensajeDiv = document.getElementById('mensaje');
+            btnSubmit.innerText = "Verificando...";
+            mensajeDiv.classList.add('hidden');
+
+            const user_mail = document.getElementById('user_mail').value;
+            const user_password = document.getElementById('user_password').value;
+
+            try {
+                const respuesta = await fetch('/api/login', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ user_mail, user_password })
+                });
+
+                const data = await respuesta.json();
+
+                if (respuesta.ok) {
+                    localStorage.setItem('token', data.token);
+                    window.location.href = 'index.html';
+                } else {
+                    throw new Error(data.error);
+                }
+            } catch (error) {
+                mensajeDiv.className = "mt-4 p-3 rounded-lg text-sm text-center font-medium bg-red-100 text-red-700 block";
+                mensajeDiv.innerText = error.message || "Error al iniciar sesión";
+                mensajeDiv.classList.remove('hidden');
+            } finally {
+                btnSubmit.innerText = "Ingresar";
+            }
+        });
+    </script>
+</body>
+</html>
