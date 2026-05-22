@@ -1,0 +1,169 @@
+[
+  {
+    "contacto": {
+      "email": "esteban@empresa.com",
+      "telefono": "1123456789"
+    },
+    "_id": "6a103f4743f23a00ced732d5",
+    "legajo_id": "LEG-2026-001",
+    "nombre": "Esteban Quito",
+    "puesto": "Backend Developer",
+    "informacion_adicional": {
+      "skills": "Node.js, Docker, Git",
+      "equipamiento": "Notebook Lenovo, 16GB RAM",
+      "ingles_avanzado": "Sí"
+    },
+    "fecha_ingreso": "2026-05-22T11:34:31.939Z",
+    "__v": 0
+  },
+  {
+    "contacto": {
+      "email": "anaclara@empresa.com"
+    },
+    "_id": "6a103f4743f23a00ced732d6",
+    "legajo_id": "LEG-2026-002",
+    "nombre": "Ana Clara Ruiz",
+    "puesto": "Analista de RRHH",
+    "informacion_adicional": {
+      "obra_social": "OSDE 310",
+      "grupo_sanguineo": "A+",
+      "sindicato": "Sindicato de Comercio",
+      "familiares_a_cargo": "2"
+    },
+    "fecha_ingreso": "2026-05-22T11:34:31.940Z",
+    "__v": 0
+  },
+  {
+    "contacto": {
+      "email": "cgaliano@empresa.com",
+      "telefono": "1145678912"
+    },
+    "_id": "6a103f4743f23a00ced732d7",
+    "legajo_id": "LEG-2026-003",
+    "nombre": "Carlos Galiano",
+    "puesto": "Frontend Developer",
+    "informacion_adicional": {
+      "framework_principal": "React",
+      "equipamiento": "MacBook Pro M2",
+      "certificaciones": "AWS Cloud Practitioner"
+    },
+    "fecha_ingreso": "2026-05-22T11:34:31.940Z",
+    "__v": 0
+  },
+  {
+    "contacto": {
+      "email": "mlopez@empresa.com"
+    },
+    "_id": "6a103f4743f23a00ced732d8",
+    "legajo_id": "LEG-2026-004",
+    "nombre": "María López",
+    "puesto": "Project Manager",
+    "informacion_adicional": {
+      "metodologia": "Agile/Scrum",
+      "idiomas": "Inglés, Portugués",
+      "obra_social": "Galeno 220"
+    },
+    "fecha_ingreso": "2026-05-22T11:34:31.940Z",
+    "__v": 0
+  },
+  {
+    "contacto": {
+      "email": "jcortazar@empresa.com",
+      "telefono": "1198765432"
+    },
+    "_id": "6a103f4743f23a00ced732d9",
+    "legajo_id": "LEG-2026-005",
+    "nombre": "Julio Cortázar",
+    "puesto": "Technical Writer",
+    "informacion_adicional": {
+      "area": "Documentación IT",
+      "turno": "Mañana",
+      "tipo_contrato": "Freelance"
+    },
+    "fecha_ingreso": "2026-05-22T11:34:31.940Z",
+    "__v": 0
+  },
+  {
+    "contacto": {
+      "email": "lmartinez@empresa.com",
+      "telefono": "1176543210"
+    },
+    "_id": "6a103f4743f23a00ced732da",
+    "legajo_id": "LEG-2026-006",
+    "nombre": "Laura Martinez",
+    "puesto": "Diseñadora UX/UI",
+    "informacion_adicional": {
+      "herramientas": "Figma, Adobe XD",
+      "portafolio": "Behance /lmartinez",
+      "modelo_trabajo": "Híbrido"
+    },
+    "fecha_ingreso": "2026-05-22T11:34:31.941Z",
+    "__v": 0
+  },
+  {
+    "contacto": {
+      "email": "rdarin@empresa.com"
+    },
+    "_id": "6a103f4743f23a00ced732db",
+    "legajo_id": "LEG-2026-007",
+    "nombre": "Ricardo Darín",
+    "puesto": "DevOps Engineer",
+    "informacion_adicional": {
+      "cloud": "AWS, Azure",
+      "kubernetes": "Avanzado",
+      "guardia_pasiva": "Sí"
+    },
+    "fecha_ingreso": "2026-05-22T11:34:31.941Z",
+    "__v": 0
+  },
+  {
+    "contacto": {
+      "email": "scoppola@empresa.com",
+      "telefono": "1134567890"
+    },
+    "_id": "6a103f4743f23a00ced732dc",
+    "legajo_id": "LEG-2026-008",
+    "nombre": "Sofía Coppola",
+    "puesto": "Data Analyst",
+    "informacion_adicional": {
+      "herramientas_bi": "PowerBI, Tableau",
+      "base_datos": "SQL Server, MongoDB",
+      "titulo": "Licenciada en Sistemas"
+    },
+    "fecha_ingreso": "2026-05-22T11:34:31.941Z",
+    "__v": 0
+  },
+  {
+    "contacto": {
+      "email": "gfrancella@empresa.com",
+      "telefono": "1155556666"
+    },
+    "_id": "6a103f4743f23a00ced732dd",
+    "legajo_id": "LEG-2026-009",
+    "nombre": "Guillermo Francella",
+    "puesto": "Gerente Comercial",
+    "informacion_adicional": {
+      "region": "Latam Sur",
+      "vehiculo_empresa": "Sí",
+      "bono_anual": "Incluido"
+    },
+    "fecha_ingreso": "2026-05-22T11:34:31.941Z",
+    "__v": 0
+  },
+  {
+    "contacto": {
+      "email": "mminujin@empresa.com"
+    },
+    "_id": "6a103f4743f23a00ced732de",
+    "legajo_id": "LEG-2026-010",
+    "nombre": "Marta Minujín",
+    "puesto": "Directora de Arte",
+    "informacion_adicional": {
+      "departamento": "Marketing",
+      "exposiciones": "Internacional",
+      "alergias": "Ninguna"
+    },
+    "fecha_ingreso": "2026-05-22T11:34:31.941Z",
+    "__v": 0
+  }
+]

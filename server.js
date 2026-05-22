@@ -90,6 +90,53 @@ app.delete('/api/legajos/:id', authMiddleware, async (req, res) => {
     }
 });
 
+app.get('/api/legajos/backup', authMiddleware, async (req, res) => {
+    try {
+        const legajos = await Legajo.find({});
+        res.json(legajos);
+    } catch (error) {
+        res.status(500).json({ error: "Error al exportar el backup" });
+    }
+});
+
+app.post('/api/legajos/restore', authMiddleware, async (req, res) => {
+    try {
+        const importData = req.body;
+        if (!Array.isArray(importData)) {
+            return res.status(400).json({ error: "El archivo de backup no tiene el formato correcto." });
+        }
+
+        const countDB = await Legajo.countDocuments();
+        
+        if (importData.length < countDB) {
+            // Solo actualizar e insertar los importados sin borrar los existentes
+            const bulkOps = importData.map(leg => {
+                // Removemos _id para evitar errores de inmutabilidad si cambian
+                const legData = { ...leg };
+                delete legData._id;
+                
+                return {
+                    updateOne: {
+                        filter: { legajo_id: leg.legajo_id },
+                        update: { $set: legData },
+                        upsert: true
+                    }
+                };
+            });
+            await Legajo.bulkWrite(bulkOps);
+            res.json({ mensaje: "Backup importado parcialmente (Actualización de elementos)" });
+        } else {
+            // Restauración completa
+            await Legajo.deleteMany({});
+            await Legajo.insertMany(importData);
+            res.json({ mensaje: "Base de datos restaurada completamente desde el backup" });
+        }
+    } catch (error) {
+        console.error("Error en restore:", error);
+        res.status(500).json({ error: "Error al importar el backup", detalle: error.message });
+    }
+});
+
 app.listen(3000, () => {
     console.log("=> Servidor web corriendo en http://localhost:3000");
 });
