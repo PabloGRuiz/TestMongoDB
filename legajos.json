@@ -1,0 +1,1702 @@
+[
+  {
+    "legajo_id": "LEG-2026-001",
+    "nombre": "Empleado Número 1",
+    "puesto": "Data Analyst",
+    "contacto": {
+      "email": "empleado1@empresa.com",
+      "telefono": "1193646208"
+    },
+    "informacion_adicional": {
+      "obra_social": "OSDE 310",
+      "equipamiento": "MacBook Pro M2",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2025-06-02T04:42:26.807Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-002",
+    "nombre": "Empleado Número 2",
+    "puesto": "Backend Developer",
+    "contacto": {
+      "email": "empleado2@empresa.com",
+      "telefono": "1132950425"
+    },
+    "informacion_adicional": {
+      "obra_social": "Sancor Salud",
+      "equipamiento": "Notebook Lenovo, 16GB RAM",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2025-10-11T11:04:43.568Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-003",
+    "nombre": "Empleado Número 3",
+    "puesto": "Diseñador UX/UI",
+    "contacto": {
+      "email": "empleado3@empresa.com",
+      "telefono": "1152313920"
+    },
+    "informacion_adicional": {
+      "obra_social": "Sancor Salud",
+      "equipamiento": "MacBook Pro M2",
+      "ingles_avanzado": "Sí"
+    },
+    "fecha_ingreso": "2026-03-31T11:42:35.096Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-004",
+    "nombre": "Empleado Número 4",
+    "puesto": "Analista de RRHH",
+    "contacto": {
+      "email": "empleado4@empresa.com",
+      "telefono": "1112234038"
+    },
+    "informacion_adicional": {
+      "obra_social": "OSDE 310",
+      "equipamiento": "Notebook Lenovo, 16GB RAM",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2025-07-20T13:36:50.083Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-005",
+    "nombre": "Empleado Número 5",
+    "puesto": "Diseñador UX/UI",
+    "contacto": {
+      "email": "empleado5@empresa.com",
+      "telefono": "1123154915"
+    },
+    "informacion_adicional": {
+      "obra_social": "Sancor Salud",
+      "equipamiento": "MacBook Pro M2",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2025-12-18T07:22:03.672Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-006",
+    "nombre": "Empleado Número 6",
+    "puesto": "Data Analyst",
+    "contacto": {
+      "email": "empleado6@empresa.com",
+      "telefono": "1116983556"
+    },
+    "informacion_adicional": {
+      "obra_social": "OSDE 310",
+      "equipamiento": "Notebook Lenovo, 16GB RAM",
+      "ingles_avanzado": "Sí"
+    },
+    "fecha_ingreso": "2026-03-18T06:54:55.130Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-007",
+    "nombre": "Empleado Número 7",
+    "puesto": "Backend Developer",
+    "contacto": {
+      "email": "empleado7@empresa.com",
+      "telefono": "1169877607"
+    },
+    "informacion_adicional": {
+      "obra_social": "Swiss Medical",
+      "equipamiento": "MacBook Pro M2",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2026-04-23T15:07:51.912Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-008",
+    "nombre": "Empleado Número 8",
+    "puesto": "Analista de RRHH",
+    "contacto": {
+      "email": "empleado8@empresa.com",
+      "telefono": "1132542411"
+    },
+    "informacion_adicional": {
+      "obra_social": "Swiss Medical",
+      "equipamiento": "Notebook Lenovo, 16GB RAM",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2026-04-05T04:09:05.434Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-009",
+    "nombre": "Empleado Número 9",
+    "puesto": "Diseñador UX/UI",
+    "contacto": {
+      "email": "empleado9@empresa.com",
+      "telefono": "1156199143"
+    },
+    "informacion_adicional": {
+      "obra_social": "Swiss Medical",
+      "equipamiento": "MacBook Pro M2",
+      "ingles_avanzado": "Sí"
+    },
+    "fecha_ingreso": "2026-05-12T20:58:43.028Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-010",
+    "nombre": "Empleado Número 10",
+    "puesto": "Diseñador UX/UI",
+    "contacto": {
+      "email": "empleado10@empresa.com",
+      "telefono": "1160573634"
+    },
+    "informacion_adicional": {
+      "obra_social": "Swiss Medical",
+      "equipamiento": "Notebook Lenovo, 16GB RAM",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2025-08-03T04:26:28.487Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-011",
+    "nombre": "Empleado Número 11",
+    "puesto": "DevOps Engineer",
+    "contacto": {
+      "email": "empleado11@empresa.com",
+      "telefono": "1187963412"
+    },
+    "informacion_adicional": {
+      "obra_social": "Sancor Salud",
+      "equipamiento": "MacBook Pro M2",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2026-01-30T16:31:27.248Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-012",
+    "nombre": "Empleado Número 12",
+    "puesto": "Backend Developer",
+    "contacto": {
+      "email": "empleado12@empresa.com",
+      "telefono": "1117672139"
+    },
+    "informacion_adicional": {
+      "obra_social": "Galeno 220",
+      "equipamiento": "Notebook Lenovo, 16GB RAM",
+      "ingles_avanzado": "Sí"
+    },
+    "fecha_ingreso": "2025-06-03T00:14:13.255Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-013",
+    "nombre": "Empleado Número 13",
+    "puesto": "Frontend Developer",
+    "contacto": {
+      "email": "empleado13@empresa.com",
+      "telefono": "1179304161"
+    },
+    "informacion_adicional": {
+      "obra_social": "Galeno 220",
+      "equipamiento": "MacBook Pro M2",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2025-12-23T06:35:01.853Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-014",
+    "nombre": "Empleado Número 14",
+    "puesto": "Diseñador UX/UI",
+    "contacto": {
+      "email": "empleado14@empresa.com",
+      "telefono": "1193492042"
+    },
+    "informacion_adicional": {
+      "obra_social": "Sancor Salud",
+      "equipamiento": "Notebook Lenovo, 16GB RAM",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2025-11-02T08:37:31.519Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-015",
+    "nombre": "Empleado Número 15",
+    "puesto": "DevOps Engineer",
+    "contacto": {
+      "email": "empleado15@empresa.com",
+      "telefono": "1193345094"
+    },
+    "informacion_adicional": {
+      "obra_social": "Sancor Salud",
+      "equipamiento": "MacBook Pro M2",
+      "ingles_avanzado": "Sí"
+    },
+    "fecha_ingreso": "2026-02-05T03:40:39.791Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-016",
+    "nombre": "Empleado Número 16",
+    "puesto": "Frontend Developer",
+    "contacto": {
+      "email": "empleado16@empresa.com",
+      "telefono": "1159670562"
+    },
+    "informacion_adicional": {
+      "obra_social": "Swiss Medical",
+      "equipamiento": "Notebook Lenovo, 16GB RAM",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2025-10-17T03:51:30.348Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-017",
+    "nombre": "Empleado Número 17",
+    "puesto": "Analista de RRHH",
+    "contacto": {
+      "email": "empleado17@empresa.com",
+      "telefono": "1192121902"
+    },
+    "informacion_adicional": {
+      "obra_social": "Galeno 220",
+      "equipamiento": "MacBook Pro M2",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2025-11-26T06:24:53.329Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-018",
+    "nombre": "Empleado Número 18",
+    "puesto": "Data Analyst",
+    "contacto": {
+      "email": "empleado18@empresa.com",
+      "telefono": "1197975653"
+    },
+    "informacion_adicional": {
+      "obra_social": "Sancor Salud",
+      "equipamiento": "Notebook Lenovo, 16GB RAM",
+      "ingles_avanzado": "Sí"
+    },
+    "fecha_ingreso": "2026-02-03T04:22:01.245Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-019",
+    "nombre": "Empleado Número 19",
+    "puesto": "Project Manager",
+    "contacto": {
+      "email": "empleado19@empresa.com",
+      "telefono": "1140043341"
+    },
+    "informacion_adicional": {
+      "obra_social": "Sancor Salud",
+      "equipamiento": "MacBook Pro M2",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2025-12-25T14:56:20.432Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-020",
+    "nombre": "Empleado Número 20",
+    "puesto": "Data Analyst",
+    "contacto": {
+      "email": "empleado20@empresa.com",
+      "telefono": "1179466911"
+    },
+    "informacion_adicional": {
+      "obra_social": "OSDE 310",
+      "equipamiento": "Notebook Lenovo, 16GB RAM",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2026-01-30T19:32:46.480Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-021",
+    "nombre": "Empleado Número 21",
+    "puesto": "Data Analyst",
+    "contacto": {
+      "email": "empleado21@empresa.com",
+      "telefono": "1163670306"
+    },
+    "informacion_adicional": {
+      "obra_social": "Sancor Salud",
+      "equipamiento": "MacBook Pro M2",
+      "ingles_avanzado": "Sí"
+    },
+    "fecha_ingreso": "2025-08-22T04:05:51.539Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-022",
+    "nombre": "Empleado Número 22",
+    "puesto": "Project Manager",
+    "contacto": {
+      "email": "empleado22@empresa.com",
+      "telefono": "1170511364"
+    },
+    "informacion_adicional": {
+      "obra_social": "Sancor Salud",
+      "equipamiento": "Notebook Lenovo, 16GB RAM",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2026-05-16T15:50:40.802Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-023",
+    "nombre": "Empleado Número 23",
+    "puesto": "DevOps Engineer",
+    "contacto": {
+      "email": "empleado23@empresa.com",
+      "telefono": "1185890662"
+    },
+    "informacion_adicional": {
+      "obra_social": "OSDE 310",
+      "equipamiento": "MacBook Pro M2",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2026-04-22T16:03:59.298Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-024",
+    "nombre": "Empleado Número 24",
+    "puesto": "Data Analyst",
+    "contacto": {
+      "email": "empleado24@empresa.com",
+      "telefono": "1130114109"
+    },
+    "informacion_adicional": {
+      "obra_social": "OSDE 310",
+      "equipamiento": "Notebook Lenovo, 16GB RAM",
+      "ingles_avanzado": "Sí"
+    },
+    "fecha_ingreso": "2026-02-18T18:25:51.006Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-025",
+    "nombre": "Empleado Número 25",
+    "puesto": "Analista de RRHH",
+    "contacto": {
+      "email": "empleado25@empresa.com",
+      "telefono": "1160352665"
+    },
+    "informacion_adicional": {
+      "obra_social": "Galeno 220",
+      "equipamiento": "MacBook Pro M2",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2026-03-09T20:10:07.410Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-026",
+    "nombre": "Empleado Número 26",
+    "puesto": "Analista de RRHH",
+    "contacto": {
+      "email": "empleado26@empresa.com",
+      "telefono": "1135200974"
+    },
+    "informacion_adicional": {
+      "obra_social": "Swiss Medical",
+      "equipamiento": "Notebook Lenovo, 16GB RAM",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2026-04-26T13:37:59.294Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-027",
+    "nombre": "Empleado Número 27",
+    "puesto": "Diseñador UX/UI",
+    "contacto": {
+      "email": "empleado27@empresa.com",
+      "telefono": "1199467936"
+    },
+    "informacion_adicional": {
+      "obra_social": "Galeno 220",
+      "equipamiento": "MacBook Pro M2",
+      "ingles_avanzado": "Sí"
+    },
+    "fecha_ingreso": "2026-05-23T17:40:25.411Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-028",
+    "nombre": "Empleado Número 28",
+    "puesto": "DevOps Engineer",
+    "contacto": {
+      "email": "empleado28@empresa.com",
+      "telefono": "1137388207"
+    },
+    "informacion_adicional": {
+      "obra_social": "Swiss Medical",
+      "equipamiento": "Notebook Lenovo, 16GB RAM",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2026-01-29T13:08:09.195Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-029",
+    "nombre": "Empleado Número 29",
+    "puesto": "Data Analyst",
+    "contacto": {
+      "email": "empleado29@empresa.com",
+      "telefono": "1153920346"
+    },
+    "informacion_adicional": {
+      "obra_social": "OSDE 310",
+      "equipamiento": "MacBook Pro M2",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2026-02-17T02:33:11.899Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-030",
+    "nombre": "Empleado Número 30",
+    "puesto": "DevOps Engineer",
+    "contacto": {
+      "email": "empleado30@empresa.com",
+      "telefono": "1140268864"
+    },
+    "informacion_adicional": {
+      "obra_social": "OSDE 310",
+      "equipamiento": "Notebook Lenovo, 16GB RAM",
+      "ingles_avanzado": "Sí"
+    },
+    "fecha_ingreso": "2026-04-20T12:03:24.209Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-031",
+    "nombre": "Empleado Número 31",
+    "puesto": "Analista de RRHH",
+    "contacto": {
+      "email": "empleado31@empresa.com",
+      "telefono": "1118234782"
+    },
+    "informacion_adicional": {
+      "obra_social": "Sancor Salud",
+      "equipamiento": "MacBook Pro M2",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2026-03-16T22:04:00.216Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-032",
+    "nombre": "Empleado Número 32",
+    "puesto": "DevOps Engineer",
+    "contacto": {
+      "email": "empleado32@empresa.com",
+      "telefono": "1141650064"
+    },
+    "informacion_adicional": {
+      "obra_social": "Galeno 220",
+      "equipamiento": "Notebook Lenovo, 16GB RAM",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2025-11-05T23:26:45.563Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-033",
+    "nombre": "Empleado Número 33",
+    "puesto": "Diseñador UX/UI",
+    "contacto": {
+      "email": "empleado33@empresa.com",
+      "telefono": "1118286507"
+    },
+    "informacion_adicional": {
+      "obra_social": "Sancor Salud",
+      "equipamiento": "MacBook Pro M2",
+      "ingles_avanzado": "Sí"
+    },
+    "fecha_ingreso": "2025-09-29T09:44:00.138Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-034",
+    "nombre": "Empleado Número 34",
+    "puesto": "Backend Developer",
+    "contacto": {
+      "email": "empleado34@empresa.com",
+      "telefono": "1178399992"
+    },
+    "informacion_adicional": {
+      "obra_social": "Swiss Medical",
+      "equipamiento": "Notebook Lenovo, 16GB RAM",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2025-07-27T06:21:10.764Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-035",
+    "nombre": "Empleado Número 35",
+    "puesto": "Diseñador UX/UI",
+    "contacto": {
+      "email": "empleado35@empresa.com",
+      "telefono": "1150168347"
+    },
+    "informacion_adicional": {
+      "obra_social": "OSDE 310",
+      "equipamiento": "MacBook Pro M2",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2026-02-12T04:34:20.483Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-036",
+    "nombre": "Empleado Número 36",
+    "puesto": "Backend Developer",
+    "contacto": {
+      "email": "empleado36@empresa.com",
+      "telefono": "1157896643"
+    },
+    "informacion_adicional": {
+      "obra_social": "Swiss Medical",
+      "equipamiento": "Notebook Lenovo, 16GB RAM",
+      "ingles_avanzado": "Sí"
+    },
+    "fecha_ingreso": "2025-07-17T19:10:38.522Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-037",
+    "nombre": "Empleado Número 37",
+    "puesto": "Frontend Developer",
+    "contacto": {
+      "email": "empleado37@empresa.com",
+      "telefono": "1173837930"
+    },
+    "informacion_adicional": {
+      "obra_social": "Galeno 220",
+      "equipamiento": "MacBook Pro M2",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2025-09-18T23:32:12.910Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-038",
+    "nombre": "Empleado Número 38",
+    "puesto": "Diseñador UX/UI",
+    "contacto": {
+      "email": "empleado38@empresa.com",
+      "telefono": "1159309449"
+    },
+    "informacion_adicional": {
+      "obra_social": "Swiss Medical",
+      "equipamiento": "Notebook Lenovo, 16GB RAM",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2026-05-18T01:22:51.162Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-039",
+    "nombre": "Empleado Número 39",
+    "puesto": "Diseñador UX/UI",
+    "contacto": {
+      "email": "empleado39@empresa.com",
+      "telefono": "1180335225"
+    },
+    "informacion_adicional": {
+      "obra_social": "OSDE 310",
+      "equipamiento": "MacBook Pro M2",
+      "ingles_avanzado": "Sí"
+    },
+    "fecha_ingreso": "2025-09-18T09:03:55.291Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-040",
+    "nombre": "Empleado Número 40",
+    "puesto": "Analista de RRHH",
+    "contacto": {
+      "email": "empleado40@empresa.com",
+      "telefono": "1125161023"
+    },
+    "informacion_adicional": {
+      "obra_social": "Swiss Medical",
+      "equipamiento": "Notebook Lenovo, 16GB RAM",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2025-08-22T07:23:55.784Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-041",
+    "nombre": "Empleado Número 41",
+    "puesto": "Analista de RRHH",
+    "contacto": {
+      "email": "empleado41@empresa.com",
+      "telefono": "1162739418"
+    },
+    "informacion_adicional": {
+      "obra_social": "Sancor Salud",
+      "equipamiento": "MacBook Pro M2",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2025-07-07T21:43:32.182Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-042",
+    "nombre": "Empleado Número 42",
+    "puesto": "DevOps Engineer",
+    "contacto": {
+      "email": "empleado42@empresa.com",
+      "telefono": "1158722732"
+    },
+    "informacion_adicional": {
+      "obra_social": "OSDE 310",
+      "equipamiento": "Notebook Lenovo, 16GB RAM",
+      "ingles_avanzado": "Sí"
+    },
+    "fecha_ingreso": "2025-08-19T22:19:46.068Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-043",
+    "nombre": "Empleado Número 43",
+    "puesto": "DevOps Engineer",
+    "contacto": {
+      "email": "empleado43@empresa.com",
+      "telefono": "1156620643"
+    },
+    "informacion_adicional": {
+      "obra_social": "OSDE 310",
+      "equipamiento": "MacBook Pro M2",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2025-08-05T07:23:53.288Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-044",
+    "nombre": "Empleado Número 44",
+    "puesto": "Backend Developer",
+    "contacto": {
+      "email": "empleado44@empresa.com",
+      "telefono": "1168794541"
+    },
+    "informacion_adicional": {
+      "obra_social": "OSDE 310",
+      "equipamiento": "Notebook Lenovo, 16GB RAM",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2026-01-03T10:19:04.109Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-045",
+    "nombre": "Empleado Número 45",
+    "puesto": "Backend Developer",
+    "contacto": {
+      "email": "empleado45@empresa.com",
+      "telefono": "1197681547"
+    },
+    "informacion_adicional": {
+      "obra_social": "Sancor Salud",
+      "equipamiento": "MacBook Pro M2",
+      "ingles_avanzado": "Sí"
+    },
+    "fecha_ingreso": "2025-06-28T13:44:58.022Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-046",
+    "nombre": "Empleado Número 46",
+    "puesto": "DevOps Engineer",
+    "contacto": {
+      "email": "empleado46@empresa.com",
+      "telefono": "1172022241"
+    },
+    "informacion_adicional": {
+      "obra_social": "Swiss Medical",
+      "equipamiento": "Notebook Lenovo, 16GB RAM",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2025-05-27T15:06:54.116Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-047",
+    "nombre": "Empleado Número 47",
+    "puesto": "Frontend Developer",
+    "contacto": {
+      "email": "empleado47@empresa.com",
+      "telefono": "1155123921"
+    },
+    "informacion_adicional": {
+      "obra_social": "OSDE 310",
+      "equipamiento": "MacBook Pro M2",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2026-04-14T20:33:24.748Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-048",
+    "nombre": "Empleado Número 48",
+    "puesto": "Project Manager",
+    "contacto": {
+      "email": "empleado48@empresa.com",
+      "telefono": "1173030783"
+    },
+    "informacion_adicional": {
+      "obra_social": "Galeno 220",
+      "equipamiento": "Notebook Lenovo, 16GB RAM",
+      "ingles_avanzado": "Sí"
+    },
+    "fecha_ingreso": "2025-11-21T06:42:46.285Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-049",
+    "nombre": "Empleado Número 49",
+    "puesto": "Frontend Developer",
+    "contacto": {
+      "email": "empleado49@empresa.com",
+      "telefono": "1145483188"
+    },
+    "informacion_adicional": {
+      "obra_social": "Galeno 220",
+      "equipamiento": "MacBook Pro M2",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2025-10-12T04:49:39.869Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-050",
+    "nombre": "Empleado Número 50",
+    "puesto": "DevOps Engineer",
+    "contacto": {
+      "email": "empleado50@empresa.com",
+      "telefono": "1114568393"
+    },
+    "informacion_adicional": {
+      "obra_social": "Galeno 220",
+      "equipamiento": "Notebook Lenovo, 16GB RAM",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2025-12-21T02:54:16.086Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-051",
+    "nombre": "Empleado Número 51",
+    "puesto": "Diseñador UX/UI",
+    "contacto": {
+      "email": "empleado51@empresa.com",
+      "telefono": "1173273365"
+    },
+    "informacion_adicional": {
+      "obra_social": "Galeno 220",
+      "equipamiento": "MacBook Pro M2",
+      "ingles_avanzado": "Sí"
+    },
+    "fecha_ingreso": "2025-10-21T16:49:53.470Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-052",
+    "nombre": "Empleado Número 52",
+    "puesto": "Backend Developer",
+    "contacto": {
+      "email": "empleado52@empresa.com",
+      "telefono": "1151390668"
+    },
+    "informacion_adicional": {
+      "obra_social": "Galeno 220",
+      "equipamiento": "Notebook Lenovo, 16GB RAM",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2026-05-12T03:18:30.335Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-053",
+    "nombre": "Empleado Número 53",
+    "puesto": "Project Manager",
+    "contacto": {
+      "email": "empleado53@empresa.com",
+      "telefono": "1185240261"
+    },
+    "informacion_adicional": {
+      "obra_social": "Swiss Medical",
+      "equipamiento": "MacBook Pro M2",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2026-05-04T14:54:24.974Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-054",
+    "nombre": "Empleado Número 54",
+    "puesto": "Diseñador UX/UI",
+    "contacto": {
+      "email": "empleado54@empresa.com",
+      "telefono": "1192236368"
+    },
+    "informacion_adicional": {
+      "obra_social": "Galeno 220",
+      "equipamiento": "Notebook Lenovo, 16GB RAM",
+      "ingles_avanzado": "Sí"
+    },
+    "fecha_ingreso": "2025-07-17T17:47:42.593Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-055",
+    "nombre": "Empleado Número 55",
+    "puesto": "Data Analyst",
+    "contacto": {
+      "email": "empleado55@empresa.com",
+      "telefono": "1125737649"
+    },
+    "informacion_adicional": {
+      "obra_social": "Swiss Medical",
+      "equipamiento": "MacBook Pro M2",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2025-06-27T04:40:06.380Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-056",
+    "nombre": "Empleado Número 56",
+    "puesto": "DevOps Engineer",
+    "contacto": {
+      "email": "empleado56@empresa.com",
+      "telefono": "1139406517"
+    },
+    "informacion_adicional": {
+      "obra_social": "Sancor Salud",
+      "equipamiento": "Notebook Lenovo, 16GB RAM",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2026-02-06T15:24:40.119Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-057",
+    "nombre": "Empleado Número 57",
+    "puesto": "Data Analyst",
+    "contacto": {
+      "email": "empleado57@empresa.com",
+      "telefono": "1171434916"
+    },
+    "informacion_adicional": {
+      "obra_social": "Galeno 220",
+      "equipamiento": "MacBook Pro M2",
+      "ingles_avanzado": "Sí"
+    },
+    "fecha_ingreso": "2025-09-19T23:26:40.100Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-058",
+    "nombre": "Empleado Número 58",
+    "puesto": "Data Analyst",
+    "contacto": {
+      "email": "empleado58@empresa.com",
+      "telefono": "1125642989"
+    },
+    "informacion_adicional": {
+      "obra_social": "Swiss Medical",
+      "equipamiento": "Notebook Lenovo, 16GB RAM",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2025-10-16T03:02:11.202Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-059",
+    "nombre": "Empleado Número 59",
+    "puesto": "Frontend Developer",
+    "contacto": {
+      "email": "empleado59@empresa.com",
+      "telefono": "1181323943"
+    },
+    "informacion_adicional": {
+      "obra_social": "OSDE 310",
+      "equipamiento": "MacBook Pro M2",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2026-05-14T18:26:32.149Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-060",
+    "nombre": "Empleado Número 60",
+    "puesto": "Project Manager",
+    "contacto": {
+      "email": "empleado60@empresa.com",
+      "telefono": "1165616911"
+    },
+    "informacion_adicional": {
+      "obra_social": "OSDE 310",
+      "equipamiento": "Notebook Lenovo, 16GB RAM",
+      "ingles_avanzado": "Sí"
+    },
+    "fecha_ingreso": "2026-04-20T08:26:50.963Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-061",
+    "nombre": "Empleado Número 61",
+    "puesto": "Frontend Developer",
+    "contacto": {
+      "email": "empleado61@empresa.com",
+      "telefono": "1151883887"
+    },
+    "informacion_adicional": {
+      "obra_social": "OSDE 310",
+      "equipamiento": "MacBook Pro M2",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2025-06-18T16:08:04.945Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-062",
+    "nombre": "Empleado Número 62",
+    "puesto": "Analista de RRHH",
+    "contacto": {
+      "email": "empleado62@empresa.com",
+      "telefono": "1158317916"
+    },
+    "informacion_adicional": {
+      "obra_social": "Sancor Salud",
+      "equipamiento": "Notebook Lenovo, 16GB RAM",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2026-01-05T11:53:40.313Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-063",
+    "nombre": "Empleado Número 63",
+    "puesto": "Project Manager",
+    "contacto": {
+      "email": "empleado63@empresa.com",
+      "telefono": "1155568761"
+    },
+    "informacion_adicional": {
+      "obra_social": "Swiss Medical",
+      "equipamiento": "MacBook Pro M2",
+      "ingles_avanzado": "Sí"
+    },
+    "fecha_ingreso": "2025-06-24T10:43:57.104Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-064",
+    "nombre": "Empleado Número 64",
+    "puesto": "Diseñador UX/UI",
+    "contacto": {
+      "email": "empleado64@empresa.com",
+      "telefono": "1175434771"
+    },
+    "informacion_adicional": {
+      "obra_social": "OSDE 310",
+      "equipamiento": "Notebook Lenovo, 16GB RAM",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2025-11-23T12:15:46.601Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-065",
+    "nombre": "Empleado Número 65",
+    "puesto": "Diseñador UX/UI",
+    "contacto": {
+      "email": "empleado65@empresa.com",
+      "telefono": "1170181397"
+    },
+    "informacion_adicional": {
+      "obra_social": "OSDE 310",
+      "equipamiento": "MacBook Pro M2",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2025-08-16T04:14:19.575Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-066",
+    "nombre": "Empleado Número 66",
+    "puesto": "Project Manager",
+    "contacto": {
+      "email": "empleado66@empresa.com",
+      "telefono": "1165553442"
+    },
+    "informacion_adicional": {
+      "obra_social": "Swiss Medical",
+      "equipamiento": "Notebook Lenovo, 16GB RAM",
+      "ingles_avanzado": "Sí"
+    },
+    "fecha_ingreso": "2026-04-17T01:07:26.929Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-067",
+    "nombre": "Empleado Número 67",
+    "puesto": "Backend Developer",
+    "contacto": {
+      "email": "empleado67@empresa.com",
+      "telefono": "1116979515"
+    },
+    "informacion_adicional": {
+      "obra_social": "OSDE 310",
+      "equipamiento": "MacBook Pro M2",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2025-12-03T13:14:47.435Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-068",
+    "nombre": "Empleado Número 68",
+    "puesto": "Backend Developer",
+    "contacto": {
+      "email": "empleado68@empresa.com",
+      "telefono": "1199394127"
+    },
+    "informacion_adicional": {
+      "obra_social": "Sancor Salud",
+      "equipamiento": "Notebook Lenovo, 16GB RAM",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2025-12-04T13:30:02.736Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-069",
+    "nombre": "Empleado Número 69",
+    "puesto": "Data Analyst",
+    "contacto": {
+      "email": "empleado69@empresa.com",
+      "telefono": "1123983767"
+    },
+    "informacion_adicional": {
+      "obra_social": "Swiss Medical",
+      "equipamiento": "MacBook Pro M2",
+      "ingles_avanzado": "Sí"
+    },
+    "fecha_ingreso": "2026-02-20T11:10:13.509Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-070",
+    "nombre": "Empleado Número 70",
+    "puesto": "Analista de RRHH",
+    "contacto": {
+      "email": "empleado70@empresa.com",
+      "telefono": "1144829991"
+    },
+    "informacion_adicional": {
+      "obra_social": "Swiss Medical",
+      "equipamiento": "Notebook Lenovo, 16GB RAM",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2025-10-25T22:29:03.450Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-071",
+    "nombre": "Empleado Número 71",
+    "puesto": "Diseñador UX/UI",
+    "contacto": {
+      "email": "empleado71@empresa.com",
+      "telefono": "1163725568"
+    },
+    "informacion_adicional": {
+      "obra_social": "Swiss Medical",
+      "equipamiento": "MacBook Pro M2",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2026-02-16T14:28:22.785Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-072",
+    "nombre": "Empleado Número 72",
+    "puesto": "Backend Developer",
+    "contacto": {
+      "email": "empleado72@empresa.com",
+      "telefono": "1199240995"
+    },
+    "informacion_adicional": {
+      "obra_social": "Swiss Medical",
+      "equipamiento": "Notebook Lenovo, 16GB RAM",
+      "ingles_avanzado": "Sí"
+    },
+    "fecha_ingreso": "2026-02-18T16:56:35.003Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-073",
+    "nombre": "Empleado Número 73",
+    "puesto": "Backend Developer",
+    "contacto": {
+      "email": "empleado73@empresa.com",
+      "telefono": "1174470164"
+    },
+    "informacion_adicional": {
+      "obra_social": "OSDE 310",
+      "equipamiento": "MacBook Pro M2",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2026-05-13T21:19:57.611Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-074",
+    "nombre": "Empleado Número 74",
+    "puesto": "Backend Developer",
+    "contacto": {
+      "email": "empleado74@empresa.com",
+      "telefono": "1161202797"
+    },
+    "informacion_adicional": {
+      "obra_social": "Swiss Medical",
+      "equipamiento": "Notebook Lenovo, 16GB RAM",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2025-06-29T11:43:15.426Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-075",
+    "nombre": "Empleado Número 75",
+    "puesto": "Diseñador UX/UI",
+    "contacto": {
+      "email": "empleado75@empresa.com",
+      "telefono": "1141859656"
+    },
+    "informacion_adicional": {
+      "obra_social": "Swiss Medical",
+      "equipamiento": "MacBook Pro M2",
+      "ingles_avanzado": "Sí"
+    },
+    "fecha_ingreso": "2025-11-30T15:21:41.578Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-076",
+    "nombre": "Empleado Número 76",
+    "puesto": "Project Manager",
+    "contacto": {
+      "email": "empleado76@empresa.com",
+      "telefono": "1145643838"
+    },
+    "informacion_adicional": {
+      "obra_social": "OSDE 310",
+      "equipamiento": "Notebook Lenovo, 16GB RAM",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2025-07-30T13:03:35.838Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-077",
+    "nombre": "Empleado Número 77",
+    "puesto": "DevOps Engineer",
+    "contacto": {
+      "email": "empleado77@empresa.com",
+      "telefono": "1194698255"
+    },
+    "informacion_adicional": {
+      "obra_social": "Galeno 220",
+      "equipamiento": "MacBook Pro M2",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2026-05-22T10:50:13.881Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-078",
+    "nombre": "Empleado Número 78",
+    "puesto": "Frontend Developer",
+    "contacto": {
+      "email": "empleado78@empresa.com",
+      "telefono": "1153787194"
+    },
+    "informacion_adicional": {
+      "obra_social": "OSDE 310",
+      "equipamiento": "Notebook Lenovo, 16GB RAM",
+      "ingles_avanzado": "Sí"
+    },
+    "fecha_ingreso": "2026-02-02T05:32:02.570Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-079",
+    "nombre": "Empleado Número 79",
+    "puesto": "Backend Developer",
+    "contacto": {
+      "email": "empleado79@empresa.com",
+      "telefono": "1144049131"
+    },
+    "informacion_adicional": {
+      "obra_social": "Galeno 220",
+      "equipamiento": "MacBook Pro M2",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2025-07-15T12:09:08.712Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-080",
+    "nombre": "Empleado Número 80",
+    "puesto": "Project Manager",
+    "contacto": {
+      "email": "empleado80@empresa.com",
+      "telefono": "1153901272"
+    },
+    "informacion_adicional": {
+      "obra_social": "OSDE 310",
+      "equipamiento": "Notebook Lenovo, 16GB RAM",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2025-12-30T23:33:07.655Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-081",
+    "nombre": "Empleado Número 81",
+    "puesto": "Analista de RRHH",
+    "contacto": {
+      "email": "empleado81@empresa.com",
+      "telefono": "1197119723"
+    },
+    "informacion_adicional": {
+      "obra_social": "Galeno 220",
+      "equipamiento": "MacBook Pro M2",
+      "ingles_avanzado": "Sí"
+    },
+    "fecha_ingreso": "2025-09-07T13:26:03.361Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-082",
+    "nombre": "Empleado Número 82",
+    "puesto": "Frontend Developer",
+    "contacto": {
+      "email": "empleado82@empresa.com",
+      "telefono": "1139039232"
+    },
+    "informacion_adicional": {
+      "obra_social": "Sancor Salud",
+      "equipamiento": "Notebook Lenovo, 16GB RAM",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2025-09-15T15:26:32.769Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-083",
+    "nombre": "Empleado Número 83",
+    "puesto": "Diseñador UX/UI",
+    "contacto": {
+      "email": "empleado83@empresa.com",
+      "telefono": "1172729551"
+    },
+    "informacion_adicional": {
+      "obra_social": "OSDE 310",
+      "equipamiento": "MacBook Pro M2",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2025-09-21T05:15:16.756Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-084",
+    "nombre": "Empleado Número 84",
+    "puesto": "Project Manager",
+    "contacto": {
+      "email": "empleado84@empresa.com",
+      "telefono": "1197172638"
+    },
+    "informacion_adicional": {
+      "obra_social": "Sancor Salud",
+      "equipamiento": "Notebook Lenovo, 16GB RAM",
+      "ingles_avanzado": "Sí"
+    },
+    "fecha_ingreso": "2026-05-12T11:54:40.115Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-085",
+    "nombre": "Empleado Número 85",
+    "puesto": "DevOps Engineer",
+    "contacto": {
+      "email": "empleado85@empresa.com",
+      "telefono": "1122729857"
+    },
+    "informacion_adicional": {
+      "obra_social": "Galeno 220",
+      "equipamiento": "MacBook Pro M2",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2025-12-08T23:15:17.318Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-086",
+    "nombre": "Empleado Número 86",
+    "puesto": "Project Manager",
+    "contacto": {
+      "email": "empleado86@empresa.com",
+      "telefono": "1168824248"
+    },
+    "informacion_adicional": {
+      "obra_social": "Sancor Salud",
+      "equipamiento": "Notebook Lenovo, 16GB RAM",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2025-09-12T13:49:24.446Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-087",
+    "nombre": "Empleado Número 87",
+    "puesto": "Analista de RRHH",
+    "contacto": {
+      "email": "empleado87@empresa.com",
+      "telefono": "1192959190"
+    },
+    "informacion_adicional": {
+      "obra_social": "Swiss Medical",
+      "equipamiento": "MacBook Pro M2",
+      "ingles_avanzado": "Sí"
+    },
+    "fecha_ingreso": "2026-02-26T15:35:07.048Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-088",
+    "nombre": "Empleado Número 88",
+    "puesto": "Backend Developer",
+    "contacto": {
+      "email": "empleado88@empresa.com",
+      "telefono": "1129872895"
+    },
+    "informacion_adicional": {
+      "obra_social": "Swiss Medical",
+      "equipamiento": "Notebook Lenovo, 16GB RAM",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2026-01-21T09:28:05.133Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-089",
+    "nombre": "Empleado Número 89",
+    "puesto": "DevOps Engineer",
+    "contacto": {
+      "email": "empleado89@empresa.com",
+      "telefono": "1179362066"
+    },
+    "informacion_adicional": {
+      "obra_social": "Swiss Medical",
+      "equipamiento": "MacBook Pro M2",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2026-04-27T16:34:22.866Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-090",
+    "nombre": "Empleado Número 90",
+    "puesto": "Analista de RRHH",
+    "contacto": {
+      "email": "empleado90@empresa.com",
+      "telefono": "1189370787"
+    },
+    "informacion_adicional": {
+      "obra_social": "Swiss Medical",
+      "equipamiento": "Notebook Lenovo, 16GB RAM",
+      "ingles_avanzado": "Sí"
+    },
+    "fecha_ingreso": "2025-06-11T16:44:26.620Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-091",
+    "nombre": "Empleado Número 91",
+    "puesto": "Project Manager",
+    "contacto": {
+      "email": "empleado91@empresa.com",
+      "telefono": "1150353662"
+    },
+    "informacion_adicional": {
+      "obra_social": "Sancor Salud",
+      "equipamiento": "MacBook Pro M2",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2026-04-06T04:32:00.044Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-092",
+    "nombre": "Empleado Número 92",
+    "puesto": "Project Manager",
+    "contacto": {
+      "email": "empleado92@empresa.com",
+      "telefono": "1120451996"
+    },
+    "informacion_adicional": {
+      "obra_social": "Galeno 220",
+      "equipamiento": "Notebook Lenovo, 16GB RAM",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2026-03-09T03:48:42.581Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-093",
+    "nombre": "Empleado Número 93",
+    "puesto": "Frontend Developer",
+    "contacto": {
+      "email": "empleado93@empresa.com",
+      "telefono": "1111374057"
+    },
+    "informacion_adicional": {
+      "obra_social": "Swiss Medical",
+      "equipamiento": "MacBook Pro M2",
+      "ingles_avanzado": "Sí"
+    },
+    "fecha_ingreso": "2026-02-18T07:25:17.888Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-094",
+    "nombre": "Empleado Número 94",
+    "puesto": "Project Manager",
+    "contacto": {
+      "email": "empleado94@empresa.com",
+      "telefono": "1128514344"
+    },
+    "informacion_adicional": {
+      "obra_social": "Swiss Medical",
+      "equipamiento": "Notebook Lenovo, 16GB RAM",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2025-08-13T21:44:17.412Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-095",
+    "nombre": "Empleado Número 95",
+    "puesto": "DevOps Engineer",
+    "contacto": {
+      "email": "empleado95@empresa.com",
+      "telefono": "1190901255"
+    },
+    "informacion_adicional": {
+      "obra_social": "Galeno 220",
+      "equipamiento": "MacBook Pro M2",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2025-05-31T23:16:01.698Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-096",
+    "nombre": "Empleado Número 96",
+    "puesto": "DevOps Engineer",
+    "contacto": {
+      "email": "empleado96@empresa.com",
+      "telefono": "1190341555"
+    },
+    "informacion_adicional": {
+      "obra_social": "Galeno 220",
+      "equipamiento": "Notebook Lenovo, 16GB RAM",
+      "ingles_avanzado": "Sí"
+    },
+    "fecha_ingreso": "2025-06-23T13:56:55.711Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-097",
+    "nombre": "Empleado Número 97",
+    "puesto": "Project Manager",
+    "contacto": {
+      "email": "empleado97@empresa.com",
+      "telefono": "1135761836"
+    },
+    "informacion_adicional": {
+      "obra_social": "Galeno 220",
+      "equipamiento": "MacBook Pro M2",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2026-03-11T04:37:13.436Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-098",
+    "nombre": "Empleado Número 98",
+    "puesto": "Diseñador UX/UI",
+    "contacto": {
+      "email": "empleado98@empresa.com",
+      "telefono": "1160418441"
+    },
+    "informacion_adicional": {
+      "obra_social": "Swiss Medical",
+      "equipamiento": "Notebook Lenovo, 16GB RAM",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2026-04-10T16:16:21.622Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-099",
+    "nombre": "Empleado Número 99",
+    "puesto": "Project Manager",
+    "contacto": {
+      "email": "empleado99@empresa.com",
+      "telefono": "1166727990"
+    },
+    "informacion_adicional": {
+      "obra_social": "Swiss Medical",
+      "equipamiento": "MacBook Pro M2",
+      "ingles_avanzado": "Sí"
+    },
+    "fecha_ingreso": "2025-06-03T16:29:49.383Z",
+    "isActive": true,
+    "deletedAt": null
+  },
+  {
+    "legajo_id": "LEG-2026-100",
+    "nombre": "Empleado Número 100",
+    "puesto": "Diseñador UX/UI",
+    "contacto": {
+      "email": "empleado100@empresa.com",
+      "telefono": "1191705332"
+    },
+    "informacion_adicional": {
+      "obra_social": "Swiss Medical",
+      "equipamiento": "Notebook Lenovo, 16GB RAM",
+      "ingles_avanzado": "No"
+    },
+    "fecha_ingreso": "2025-10-06T03:34:39.064Z",
+    "isActive": true,
+    "deletedAt": null
+  }
+]

@@ -5,74 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Dashboard Legajos</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class'
+        }
+        // Aplicar tema guardado inmediatamente para evitar parpadeo blanco
+        if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+    </script>
 </head>
-<body class="bg-gray-100 min-h-screen flex items-center justify-center font-sans">
+<body class="bg-gray-100 dark:bg-gray-900 min-h-screen flex items-center justify-center font-sans transition-colors duration-250 p-4">
 
-    <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200 w-full max-w-md">
-        <div class="mb-6 border-b pb-4 text-center">
-            <h2 class="text-3xl font-bold text-gray-800">Iniciar Sesión</h2>
-            <p class="text-gray-500 text-sm mt-1">Acceso al sistema de legajos</p>
+    <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 w-full max-w-md transition-colors duration-250">
+        <div class="mb-6 border-b dark:border-gray-700 pb-4 text-center">
+            <h2 class="text-3xl font-extrabold text-gray-800 dark:text-gray-100 transition-colors">Iniciar Sesión</h2>
+            <p class="text-gray-500 dark:text-gray-400 text-sm mt-1 transition-colors">Acceso al sistema de legajos</p>
         </div>
 
         <form id="formLogin" class="space-y-4">
             <div>
-                <label class="block text-sm font-semibold text-gray-700 mb-1">Email</label>
+                <label class="block text-sm font-semibold text-gray-750 dark:text-gray-300 mb-1 transition-colors">Email</label>
                 <input type="email" id="user_mail" placeholder="usuario@empresa.com" required
-                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
+                    class="w-full px-4 py-2.5 border border-gray-300 dark:border-gray-600 rounded-xl bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-600 outline-none transition-all">
             </div>
             <div>
-                <label class="block text-sm font-semibold text-gray-700 mb-1">Contraseña</label>
+                <label class="block text-sm font-semibold text-gray-750 dark:text-gray-300 mb-1 transition-colors">Contraseña</label>
                 <input type="password" id="user_password" placeholder="••••••••" required
-                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
+                    class="w-full px-4 py-2.5 border border-gray-300 dark:border-gray-600 rounded-xl bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-600 outline-none transition-all">
             </div>
 
             <button type="submit" id="btnSubmit"
-                class="w-full mt-6 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg shadow-md transition-all active:scale-95">
+                class="w-full mt-6 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3.5 px-4 rounded-xl shadow-md transition-all active:scale-95">
                 Ingresar
             </button>
         </form>
 
         <div id="mensaje" class="hidden mt-4 p-3 rounded-lg text-sm text-center font-medium"></div>
 
-        <div class="mt-6 text-center text-sm text-gray-600">
-            ¿No tienes cuenta? <a href="register.html" class="text-blue-600 font-bold hover:underline">Regístrate aquí</a>
+        <div class="mt-6 text-center text-sm text-gray-600 dark:text-gray-400 transition-colors">
+            ¿No tienes cuenta? <a href="register.html" class="text-blue-600 dark:text-blue-400 font-bold hover:underline transition-colors">Regístrate aquí</a>
         </div>
     </div>
 
-    <script>
-        document.getElementById('formLogin').addEventListener('submit', async (e) => {
-            e.preventDefault();
-            const btnSubmit = document.getElementById('btnSubmit');
-            const mensajeDiv = document.getElementById('mensaje');
-            btnSubmit.innerText = "Verificando...";
-            mensajeDiv.classList.add('hidden');
-
-            const user_mail = document.getElementById('user_mail').value;
-            const user_password = document.getElementById('user_password').value;
-
-            try {
-                const respuesta = await fetch('/api/login', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ user_mail, user_password })
-                });
-
-                const data = await respuesta.json();
-
-                if (respuesta.ok) {
-                    localStorage.setItem('token', data.token);
-                    window.location.href = 'index.html';
-                } else {
-                    throw new Error(data.error);
-                }
-            } catch (error) {
-                mensajeDiv.className = "mt-4 p-3 rounded-lg text-sm text-center font-medium bg-red-100 text-red-700 block";
-                mensajeDiv.innerText = error.message || "Error al iniciar sesión";
-                mensajeDiv.classList.remove('hidden');
-            } finally {
-                btnSubmit.innerText = "Ingresar";
-            }
-        });
-    </script>
+    <!-- Enlace al Script de Login Reestructurado -->
+    <script src="js/login.js"></script>
 </body>
 </html>

@@ -1,17 +1,17 @@
 const jwt = require('jsonwebtoken');
-const JWT_SECRET = 'supersecretkey123';
+const JWT_SECRET = 'supersecretkey123'; // Can be moved to environment variables later
 
 const authMiddleware = (req, res, next) => {
     const authHeader = req.header('Authorization');
     
     if (!authHeader) {
-        return res.status(401).json({ error: 'Acceso denegado. No hay token proporcionado.' });
+        return res.status(401).json({ error: 'Access denied. No token provided.' });
     }
 
     const token = authHeader.split(' ')[1];
 
     if (!token) {
-        return res.status(401).json({ error: 'Acceso denegado. Formato de token inválido.' });
+        return res.status(401).json({ error: 'Access denied. Invalid token format.' });
     }
 
     try {
@@ -19,7 +19,7 @@ const authMiddleware = (req, res, next) => {
         req.user = decoded;
         next();
     } catch (error) {
-        res.status(401).json({ error: 'Token inválido o expirado.' });
+        return res.status(401).json({ error: 'Invalid or expired token.' });
     }
 };
 

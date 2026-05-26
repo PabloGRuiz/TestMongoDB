@@ -25,6 +25,11 @@ if (token) {
             const userRoleEl = document.getElementById('userRole');
             if (userNameEl) userNameEl.innerText = payload.user_name || 'Usuario';
             if (userRoleEl) userRoleEl.innerText = payload.user_rol || 'Usuario';
+            
+            if (payload.user_rol === 'Admin') {
+                const btnPapelera = document.getElementById('btnPapelera');
+                if(btnPapelera) btnPapelera.classList.remove('hidden');
+            }
         });
     }
 }
@@ -62,6 +67,10 @@ document.getElementById('formLegajo').addEventListener('submit', async (e) => {
         legajo_id: document.getElementById('legajo_id').value,
         nombre: document.getElementById('nombre').value,
         puesto: document.getElementById('puesto').value,
+        contacto: {
+            email: document.getElementById('email').value,
+            telefono: document.getElementById('telefono').value
+        },
         informacion_adicional: {}
     };
 
@@ -106,6 +115,11 @@ document.getElementById('formLegajo').addEventListener('submit', async (e) => {
     }
 });
 
+let allLegajos = [];
+let currentPage = 1;
+const itemsPerPage = 10;
+let currentSearchTerm = '';
+
 async function cargarLegajos() {
     const listaDiv = document.getElementById('listaLegajos');
     try {
@@ -113,52 +127,101 @@ async function cargarLegajos() {
             headers: { 'Authorization': `Bearer ${token}` }
         });
         handleAuthError(respuesta);
-        const legajos = await respuesta.json();
+        allLegajos = await respuesta.json();
+        
+        currentPage = 1;
+        renderLegajos();
+    } catch (error) {
+        listaDiv.innerHTML = '<p class="text-red-500 text-sm">Error al cargar la base de datos.</p>';
+    }
+}
 
-        listaDiv.innerHTML = '';
+function filtrarLegajos(event) {
+    currentSearchTerm = event.target.value.toLowerCase();
+    currentPage = 1;
+    renderLegajos();
+}
 
-        if (legajos.length === 0) {
-            listaDiv.innerHTML = '<p class="text-gray-500 dark:text-gray-400 text-sm italic transition-colors">No hay legajos en la base de datos.</p>';
-            return;
+function cambiarPagina(delta) {
+    currentPage += delta;
+    renderLegajos();
+}
+
+function renderLegajos() {
+    const listaDiv = document.getElementById('listaLegajos');
+    const paginacionDiv = document.getElementById('paginacionLegajos');
+    
+    const filtrados = allLegajos.filter(leg => {
+        const searchStr = `${leg.nombre} ${leg.puesto} ${leg.legajo_id}`.toLowerCase();
+        return searchStr.includes(currentSearchTerm);
+    });
+
+    const totalPages = Math.ceil(filtrados.length / itemsPerPage);
+    if (currentPage > totalPages && totalPages > 0) currentPage = totalPages;
+    if (currentPage < 1) currentPage = 1;
+    
+    const startIndex = (currentPage - 1) * itemsPerPage;
+    const paginados = filtrados.slice(startIndex, startIndex + itemsPerPage);
+
+    listaDiv.innerHTML = '';
+
+    if (paginados.length === 0) {
+        listaDiv.innerHTML = '<p class="text-gray-500 dark:text-gray-400 text-sm italic transition-colors">No se encontraron legajos.</p>';
+        if (paginacionDiv) paginacionDiv.innerHTML = '';
+        return;
+    }
+
+    paginados.forEach(leg => {
+        let infoExtraHTML = '';
+        if (leg.informacion_adicional && Object.keys(leg.informacion_adicional).length > 0) {
+            infoExtraHTML = `<div class="mt-3 pt-3 border-t border-gray-100 dark:border-gray-700/50 transition-colors">
+                <p class="text-xs font-bold text-indigo-600 dark:text-indigo-400 mb-1 transition-colors">Info Adicional:</p>
+                <ul class="text-xs text-gray-600 dark:text-gray-300 space-y-1 transition-colors">`;
+
+            for (const [clave, valor] of Object.entries(leg.informacion_adicional)) {
+                infoExtraHTML += `<li><span class="font-bold text-gray-800 dark:text-gray-100 transition-colors">${clave}:</span> ${valor}</li>`;
+            }
+            infoExtraHTML += `</ul></div>`;
         }
 
-        legajos.forEach(leg => {
-            let infoExtraHTML = '';
-            if (leg.informacion_adicional && Object.keys(leg.informacion_adicional).length > 0) {
-                infoExtraHTML = `<div class="mt-3 pt-3 border-t border-gray-100 dark:border-gray-700/50 transition-colors">
-                    <p class="text-xs font-bold text-indigo-600 dark:text-indigo-400 mb-1 transition-colors">Info Adicional:</p>
-                    <ul class="text-xs text-gray-600 dark:text-gray-300 space-y-1 transition-colors">`;
-
-                for (const [clave, valor] of Object.entries(leg.informacion_adicional)) {
-                    infoExtraHTML += `<li><span class="font-bold text-gray-800 dark:text-gray-100 transition-colors">${clave}:</span> ${valor}</li>`;
-                }
-                infoExtraHTML += `</ul></div>`;
-            }
-
-            const tarjeta = document.createElement('div');
-            tarjeta.className = "p-4 border border-gray-200 dark:border-gray-700 rounded-lg hover:shadow-md transition-all bg-gray-50 dark:bg-gray-700/30 relative";
-            tarjeta.innerHTML = `
+        const tarjeta = document.createElement('div');
+        tarjeta.className = "p-4 border border-gray-200 dark:border-gray-700 rounded-lg hover:shadow-md transition-all bg-gray-50 dark:bg-gray-700/30 relative";
+        tarjeta.innerHTML = `
     <div class="flex justify-between items-start">
         <div>
             <h3 class="font-bold text-lg text-gray-800 dark:text-gray-100 transition-colors">${leg.nombre}</h3>
             <p class="text-sm text-gray-500 dark:text-gray-400 transition-colors">${leg.puesto} | <span class="text-blue-600 dark:text-blue-400 font-mono text-xs transition-colors">${leg.legajo_id}</span></p>
         </div>
-        <button onclick="eliminarLegajo('${leg._id}')" class="text-red-400 hover:text-red-600 transition-colors p-1" title="Eliminar Legajo">
-            🗑️
-        </button>
+        <div class="flex gap-2">
+            <a href="detalles.html?id=${leg._id}" class="text-blue-500 hover:text-blue-700 text-sm font-bold transition-colors self-center bg-blue-50 dark:bg-blue-900/30 px-2 py-1 rounded border border-blue-200 dark:border-blue-800" title="Ver Detalles">
+                Detalles
+            </a>
+            <button onclick="eliminarLegajo('${leg._id}')" class="text-red-400 hover:text-red-600 transition-colors p-1" title="Eliminar Legajo">
+                🗑️
+            </button>
+        </div>
     </div>
     ${infoExtraHTML}
 `;
-            listaDiv.appendChild(tarjeta);
-        });
-    } catch (error) {
-        listaDiv.innerHTML = '<p class="text-red-500 text-sm">Error al cargar la base de datos.</p>';
+        listaDiv.appendChild(tarjeta);
+    });
+    
+    if (paginacionDiv) {
+        paginacionDiv.innerHTML = `
+            <button onclick="cambiarPagina(-1)" ${currentPage === 1 ? 'disabled class="text-gray-400 dark:text-gray-600 cursor-not-allowed font-bold"' : 'class="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-bold transition-colors cursor-pointer"'}>
+                &larr; Anterior
+            </button>
+            <span class="text-gray-600 dark:text-gray-400 font-semibold bg-gray-100 dark:bg-gray-700 px-3 py-1 rounded-full border border-gray-200 dark:border-gray-600">Página ${currentPage} de ${totalPages || 1}</span>
+            <button onclick="cambiarPagina(1)" ${currentPage >= totalPages ? 'disabled class="text-gray-400 dark:text-gray-600 cursor-not-allowed font-bold"' : 'class="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-bold transition-colors cursor-pointer"'}>
+                Siguiente &rarr;
+            </button>
+        `;
     }
 }
 cargarLegajos();
 
 async function eliminarLegajo(idMongo) {
-    if (confirm("¿Estás seguro de que querés eliminar este legajo definitivamente?")) {
+    if (confirm("¿Estás seguro de que querés enviar este legajo a la papelera?")) {
         try {
             const respuesta = await fetch(`/api/legajos/${idMongo}`, {
                 method: 'DELETE',
