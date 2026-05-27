@@ -4,8 +4,16 @@ const User = require('../src/models/User');
 async function runSeedUsers() {
     console.log('=> [SEED USERS] Starting user seeding...');
     
-    await User.deleteMany({});
-    console.log('=> [SEED USERS] Users collection cleared.');
+    try {
+        await User.collection.drop();
+        console.log('=> [SEED USERS] Users collection dropped.');
+    } catch (e) {
+        if (e.code === 26) {
+            console.log('=> [SEED USERS] Users collection does not exist yet.');
+        } else {
+            throw e;
+        }
+    }
 
     const admin = new User({
         userId: 'admin-01',

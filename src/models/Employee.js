@@ -9,7 +9,10 @@ const employeeSchema = new mongoose.Schema({
         email: String,
         phone: String
     },
-    additionalInfo: mongoose.Schema.Types.Mixed,
+    additionalInfo: [{
+        k: { type: String, required: true },
+        v: { type: String, required: true }
+    }],
     isActive: { type: Boolean, default: true },
     deletedAt: { type: Date, default: null }
 }, {

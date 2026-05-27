@@ -1,23 +1,15 @@
-const express = require('express');
-const conectarDB = require('./src/config/db');
-const authRoutes = require('./src/routes/authRoutes');
-const employeeRoutes = require('./src/routes/employeeRoutes');
+require('dotenv').config();
+const app = require('./src/app');
+const connectDB = require('./src/config/db');
 
-const app = express();
-
-// Connect to Local MongoDB
-conectarDB();
-
-// Global Middlewares
-app.use(express.json());
-app.use(express.static('public'));
-
-// API Endpoints
-app.use('/api', authRoutes);
-app.use('/api/employees', employeeRoutes);
-
-// Start server on Port 3000
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-    console.log(`=> Web server running at http://localhost:${PORT}`);
+
+// Connect to MongoDB and start the server
+connectDB().then(() => {
+    app.listen(PORT, () => {
+        console.log(`=> Web server running at http://localhost:${PORT}`);
+    });
+}).catch(err => {
+    console.error("Critical failure: Could not connect to database.", err);
+    process.exit(1);
 });

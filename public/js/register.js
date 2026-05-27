@@ -1,4 +1,3 @@
-// Validar y aplicar el modo oscuro al iniciar la página
 const currentTheme = localStorage.getItem('theme');
 if (currentTheme === 'dark' || (!currentTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
     document.documentElement.classList.add('dark');
@@ -6,49 +5,48 @@ if (currentTheme === 'dark' || (!currentTheme && window.matchMedia('(prefers-col
     document.documentElement.classList.remove('dark');
 }
 
-// Lógica de registro de usuario
 document.getElementById('formRegister').addEventListener('submit', async (e) => {
     e.preventDefault();
     const btnSubmit = document.getElementById('btnSubmit');
-    const mensajeDiv = document.getElementById('mensaje');
-    btnSubmit.innerText = "Creando cuenta...";
-    mensajeDiv.classList.add('hidden');
+    const messageDiv = document.getElementById('message');
+    btnSubmit.innerText = "Creating account...";
+    messageDiv.classList.add('hidden');
 
-    const datos = {
-        user_id: document.getElementById('user_id').value,
-        user_name: document.getElementById('user_name').value,
-        user_mail: document.getElementById('user_mail').value,
-        user_rol: document.getElementById('user_rol').value,
-        user_password: document.getElementById('user_password').value
+    const data = {
+        userId: document.getElementById('userId').value,
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        role: document.getElementById('role').value,
+        password: document.getElementById('password').value
     };
 
     try {
-        const respuesta = await fetch('/api/register', {
+        const response = await fetch('/api/register', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(datos)
+            body: JSON.stringify(data)
         });
 
-        const data = await respuesta.json();
+        const result = await response.json();
 
-        if (respuesta.ok) {
-            mensajeDiv.className = "mt-4 p-3 rounded-lg text-sm text-center font-medium bg-green-100 text-green-700 dark:bg-green-950/40 dark:text-green-400 block";
-            mensajeDiv.innerText = "¡Registro exitoso! Redirigiendo...";
-            mensajeDiv.classList.remove('hidden');
+        if (response.ok) {
+            messageDiv.className = "mt-4 p-3 rounded-lg text-sm text-center font-medium bg-green-100 text-green-700 dark:bg-green-950/40 dark:text-green-400 block";
+            messageDiv.innerText = "Registration successful! Redirecting...";
+            messageDiv.classList.remove('hidden');
             
             setTimeout(() => {
                 window.location.href = 'login.html';
             }, 2000);
         } else {
-            console.error("Error devuelto por el servidor:", data);
-            throw new Error(data.detalle || data.error);
+            console.error("Error returned by server:", result);
+            throw new Error(result.details || result.error);
         }
     } catch (error) {
-        console.error("Error en el cliente durante el registro:", error);
-        mensajeDiv.className = "mt-4 p-3 rounded-lg text-sm text-center font-medium bg-red-100 text-red-700 dark:bg-red-950/40 dark:text-red-400 block animate-pulse";
-        mensajeDiv.innerText = `Error: ${error.message || "Error al registrarse"}`;
-        mensajeDiv.classList.remove('hidden');
+        console.error("Client error during registration:", error);
+        messageDiv.className = "mt-4 p-3 rounded-lg text-sm text-center font-medium bg-red-100 text-red-700 dark:bg-red-950/40 dark:text-red-400 block animate-pulse";
+        messageDiv.innerText = `Error: ${error.message || "Error registering"}`;
+        messageDiv.classList.remove('hidden');
     } finally {
-        btnSubmit.innerText = "Registrarse";
+        btnSubmit.innerText = "Register";
     }
 });

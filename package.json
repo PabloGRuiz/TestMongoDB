@@ -1,8 +1,24 @@
 {
+  "name": "mongodblearn",
+  "version": "1.0.0",
+  "description": "Employee Management System with Attribute Pattern, Swagger API Docs, and Jest Integration Tests",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "seed": "node app.js",
+    "test": "jest --runInBand --detectOpenHandles --forceExit"
+  },
   "dependencies": {
     "bcryptjs": "^3.0.3",
+    "dotenv": "^17.4.2",
     "express": "^5.2.1",
     "jsonwebtoken": "^9.0.3",
-    "mongoose": "^9.6.2"
+    "mongoose": "^9.6.2",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
   }
 }

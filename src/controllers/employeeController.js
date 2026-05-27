@@ -1,9 +1,50 @@
 const Employee = require('../models/Employee');
+const Attribute = require('../models/Attribute');
+
+const upsertAttributes = async (additionalInfo) => {
+    if (!additionalInfo || !Array.isArray(additionalInfo)) return;
+    const names = additionalInfo.map(attr => attr.k);
+    for (const name of names) {
+        if (name) {
+            await Attribute.updateOne({ name }, { $setOnInsert: { name } }, { upsert: true });
+        }
+    }
+};
 
 const getEmployees = async (req, res) => {
     try {
-        const employees = await Employee.find({ isActive: { $ne: false } }).sort({ hireDate: -1 });
-        return res.json(employees);
+        const page = parseInt(req.query.page) || 1;
+        const limit = parseInt(req.query.limit) || 10;
+        const search = req.query.search || '';
+        
+        let query = { isActive: { $ne: false } };
+        
+        if (search) {
+            query.$or = [
+                { fullName: { $regex: search, $options: 'i' } },
+                { position: { $regex: search, $options: 'i' } },
+                { employeeId: { $regex: search, $options: 'i' } }
+            ];
+        }
+
+        const skip = (page - 1) * limit;
+
+        const [employees, totalItems] = await Promise.all([
+            Employee.find(query).sort({ hireDate: -1 }).skip(skip).limit(limit),
+            Employee.countDocuments(query)
+        ]);
+
+        const totalPages = Math.ceil(totalItems / limit);
+
+        return res.json({
+            data: employees,
+            pagination: {
+                currentPage: page,
+                totalPages: totalPages === 0 ? 1 : totalPages,
+                totalItems: totalItems,
+                limit: limit
+            }
+        });
     } catch (error) {
         console.error("Error fetching employees:", error);
         return res.status(500).json({ error: "Error fetching employees" });
@@ -14,6 +55,7 @@ const createEmployee = async (req, res) => {
     try {
         const newEmployee = new Employee(req.body);
         await newEmployee.save();
+        await upsertAttributes(req.body.additionalInfo);
         return res.status(201).json({ message: "Employee created successfully", data: newEmployee });
     } catch (error) {
         console.error("Error creating employee:", error);
@@ -61,6 +103,8 @@ const updateEmployee = async (req, res) => {
         if (!updatedEmployee) {
             return res.status(404).json({ error: "Employee not found" });
         }
+        
+        await upsertAttributes(req.body.additionalInfo);
         return res.json({ message: "Employee updated successfully", data: updatedEmployee });
     } catch (error) {
         console.error("Error updating employee:", error);

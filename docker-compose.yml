@@ -1,0 +1,25 @@
+services:
+  app:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      # These environment variables override the ones in the local .env file
+      - PORT=3000
+      - MONGO_URI=mongodb://mongo:27017/system
+      - JWT_SECRET=supersecretkey123
+    depends_on:
+      - mongo
+    volumes:
+      - .:/app
+      - /app/node_modules
+
+  mongo:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
+volumes:
+  mongo-data:
